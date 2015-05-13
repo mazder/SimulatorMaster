@@ -58,8 +58,13 @@ void Simulator::lastStats() {
 	myMemManager->lastStats();
 }
 
+long int lineNumber = 0; // mazder
+
+
 int Simulator::doNextStep(){
-	string traceLine = getNextLine();
+	lineNumber++;
+
+	/*string traceLine = getNextLine();
 	if (ONE_SECOND_PASSED) {
 		start = clock();
 		seconds++;
@@ -90,12 +95,12 @@ int Simulator::doNextStep(){
 			default:
 				//gLineInTrace++;
 			break;
-		}
+		}*/
 
 	}
-
-	if (forceAGCAfterEveryStep) 
-		myMemManager->forceGC();
+	printf("%d Done \n", lineNumber);
+	//if (forceAGCAfterEveryStep) 
+	//	myMemManager->forceGC();
 
 	/*This line calls a garbage collec after each line. Usually useful
 	 * in order to analyse the actual heap use of the file.*/

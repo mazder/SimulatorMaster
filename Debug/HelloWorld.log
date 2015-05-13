@@ -1,0 +1,11 @@
+TraceFileSimulator v2.01
+Collector: traversal
+Traversal: breadthFirst
+Allocator: real
+Heapsize: 600000 (split heap)
+Watermark: 90
+
+    Line |      GC Reason |  Total GCs |  Objects Freed |  Live Objects |  Heap Used |  Free Heap | Generation | GC Time
+   52615 |   Failed Alloc |          1 |              0 |          2052 |     299912 |         88 |          0 | 3.860
+Failed to allocate 120 bytes in trace line 52615.
+Shortest GC: 3.860s, Longest GC: 3.860s, Average GC time: 1.930s
