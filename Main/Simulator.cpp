@@ -60,7 +60,6 @@ void Simulator::lastStats() {
 
 long int lineNumber = 0; // mazder
 
-
 int Simulator::doNextStep(){
 	lineNumber++;
 
